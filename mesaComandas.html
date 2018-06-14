@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Zafiro ERP - Restaurant</title>
+     <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"  media="screen,projection"/>
+
+	 <!--Favicon-->
+     <link rel="icon" href="img/Restaurante.png">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+     <!--Mostrar en pantalla completa-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+     
+     <!--Muestra la barra de estado en iphone-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+     
+     <!--Color en la barra de direccion en chrome-->
+    <meta name="theme-color" content="#4a148c">
+     
+     <!--Color de la app-->
+    <meta name="msapplication-navbutton-color" content="#4a148c">
+     
+     <!--Pantalla de bienvenida-->
+    <link rel="apple-touch-startup-image" href="img/splash.png" />
+    
+    <!--Pantalla de bienvenida-->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+ <body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                
+                <ul id="mnuOptions" class="dropdown-content">
+                  <li><a href="#!">Dividir cuenta</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#!">Cancelar Cuenta</a></li>
+                  <li><a href="#!">Cerrar Cuenta</a></li>
+                </ul>
+                
+              
+                <ul class="left">
+                    <li><a href="javascript:history.back()"><i class="material-icons">arrow_back</i></a></li>
+                    <li><h6><b id="lblNombre"></b> <br/>Mesa <span id="lblMesa"></span></h6></li>
+                </ul>
+                <ul class="right">
+                    <li><a href="collapsible.html"><i class="material-icons">send</i></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="mnuOptions"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+     <div class="container">
+         
+     <ul class="collapsible" id="lstComanda">
+         <li class="collapsible-header purple-text text-darken-2">
+             <h4 style="margin: 0.2rem 0 0.2rem 0;">Orden</h4>
+             
+         </li>
+        <!-- Aqui se llenan los platillos -->
+
+  </ul>
+  
+     <!--
+      <ul class="collection with-header">
+        <li class="collection-header green-text text-darken-2"><h4>Entregado</h4></li>
+        <li class="collection-item">
+            <div>
+                <i class="material-icons green-text text-darken-2">check</i>
+                2 Refresco Coca Cola
+            </div>
+        </li>
+        <li class="collection-item">
+            <div>
+                <i class="material-icons green-text text-darken-2">check</i>
+                1 Jugo de Naranja
+            </div>
+        </li>
+        <li class="collection-item">
+            <div>
+                <i class="material-icons green-text text-darken-2">check</i>
+                1 Huevos Fritos
+            </div>
+        </li>  
+      </ul>
+     </div>
+     -->
+     
+    <div class="fixed-action-btn">
+      <a id="btnAgregarPlatillo" href="javascript:void(0)" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+    </div>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+     <script type="text/javascript" src="js/Core.js"></script>
+         <script type="text/javascript" src="js/Utils.js"></script>
+    <script type="text/javascript" src="js/Restaurant.js"></script>
+     <script type="text/javascript" src="js/mesaComandas.html.js"></script>
+    
+</body>
+</html>

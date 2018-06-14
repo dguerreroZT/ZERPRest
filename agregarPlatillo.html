@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Zafiro ERP - Restaurant</title>
+     <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"  media="screen,projection"/>
+     <!--Import sweetAlert2.css-->
+      <link type="text/css" rel="stylesheet" href="lib/sweetAlert2/sweetalert2.min.css"  media="screen,projection"/>
+
+	 <!--Favicon-->
+     <link rel="icon" href="img/Restaurante.png">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+     <!--Mostrar en pantalla completa-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+     
+     <!--Muestra la barra de estado en iphone-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+     
+     <!--Color en la barra de direccion en chrome-->
+    <meta name="theme-color" content="#4a148c">
+     
+     <!--Color de la app-->
+    <meta name="msapplication-navbutton-color" content="#4a148c">
+     
+     <!--Pantalla de bienvenida-->
+    <link rel="apple-touch-startup-image" href="img/splash.png" />
+    
+    <!--Pantalla de bienvenida-->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+ <body>
+    <div class="navbar-fixed">
+        <nav class="purple darken-4">
+            <div class="nav-wrapper">
+                <ul class="left">
+                    <li><a href="javascript:history.back()"><i class="material-icons">close</i></a></li>
+                    <li><h6><b>Mesa 4</b> <br/>Agregar platillo</h6></li>
+                    
+                </ul>
+                <ul class="right">
+                    <li><a id="btnBuscar" href="javascript:void(0)"><i class="material-icons">search</i></a></li>
+                    <li><a id="btnActualizar" href="javascript:void(0)"><i class="material-icons">autorenew</i></a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <nav id="navBuscar" style="display: none;">
+          <div class="nav-wrapper">
+
+              <div class="input-field">
+                <input id="Buscar" type="search" required>
+                <label class="label-icon" for="Buscar"> <a href="#!"><i class="material-icons">search</i></a></label>
+                  <i id="borrarTexto" class="material-icons">close</i>
+              </div>
+
+          </div>
+        </nav>
+        
+    </div>
+     
+     
+     
+     
+    <div class="container"> 
+        <div class="row">
+            <ul class="collection" id="lstFavoritos">
+                <!--- Aqui se llenan los platillos Favoritos -->
+            </ul>
+        </div>
+    <div class="row">
+          <div id="lstMenu" class="collection">
+
+        </div>
+     </div>
+     </div>
+     
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="lib/sweetAlert2/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/Core.js"></script>
+    <script type="text/javascript" src="js/Utils.js"></script>
+    <script type="text/javascript" src="js/Restaurant.js"></script>
+    <script type="text/javascript" src="js/agregarPlatillo.html.js"></script>
+    
+</body>
+</html>

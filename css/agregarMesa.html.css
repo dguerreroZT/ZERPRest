@@ -1,0 +1,10 @@
+.suffix {
+  position: absolute;
+  width: 3rem;
+  font-size: 2rem;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  top: .4rem;
+  right: -4rem;
+}
+

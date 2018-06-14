@@ -1,0 +1,11 @@
+#fotoCliente {
+    object-fit: cover;
+    width:150px;
+    height: 150px;
+}
+
+.card.horizontal .card-image img.fullzised {
+    object-fit: cover;
+    width:90px;
+    height: 90px;
+}

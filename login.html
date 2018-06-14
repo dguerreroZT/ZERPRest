@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+     <title>Zafiro ERP - Restaurant</title>
+     <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="lib/sweetAlert2/sweetalert2.min.css"  media="screen,projection"/>
+     <!--link type="text/css" rel="stylesheet" href="css/login.css"  media="screen,projection"/-->
+
+	 <!--Favicon-->
+     <link rel="icon" href="img/Restaurante.png">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+     <!--Mostrar en pantalla completa-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+     
+     <!--Muestra la barra de estado en iphone-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+     
+     <!--Color en la barra de direccion en chrome-->
+    <meta name="theme-color" content="#4a148c">
+     
+     <!--Color de la app-->
+    <meta name="msapplication-navbutton-color" content="#4a148c">
+     
+     <!--Pantalla de bienvenida-->
+    <link rel="apple-touch-startup-image" href="img/splash.png" />
+    
+    <!--Pantalla de bienvenida-->
+    <link rel="manifest" href="manifest.json">
+      
+  </head>
+<body bgcolor="#ede7f6">
+    <div>
+      <div class="container" style="margin-top: 25px">
+        <div class="row">
+          <div class="col s12 m6 offset-m3 z-depth-1 white">
+            <form id="frmIndex">
+              <div class="row center">
+                <!-- <h5 class="teal-text">Bienvenido a TireBits</h5>-->
+                <img style="max-height:100px;margin-top: 50px;" src="img/logo/sqare_splash-128_x_128.png">
+              </div>
+              <!--Campo de usuario -->
+              <div class="row">
+                <div class="input-field col s11 m7 offset-m2">
+                  <i class="material-icons prefix">perm_identity</i>
+                  <input id="txtUsuario" type="text">
+                  <label for="txtUsuario">Usuario</label>
+                </div>
+              </div>
+              <!--Campo de Contraseña-->
+              <div class="row">
+                <div class="input-field col s11 m7 offset-m2">
+                  <i class="material-icons prefix">lock_outline</i>
+                  <input type="password" name="txtPass" id="txtPass" value="" style="-webkit-text-security: disc;">
+                  <label for="txtPass">Contraseña</label>            
+                </div>
+              </div>          
+              <div class="row center">
+                <a class="waves-effect waves-light btn" href="#" id="btnIniciarSesion">Iniciar sesión</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+     <script type="text/javascript" src="lib/sweetAlert2/sweetalert2.min.js"></script>
+     <script type="text/javascript" src="js/Core.js"></script>
+     <script type="text/javascript" src="js/Utils.js"></script>
+    <script type="text/javascript" src="js/Restaurant.js"></script>
+     <script type="text/javascript" src="js/login.html.js"></script>
+</body>
+</html>

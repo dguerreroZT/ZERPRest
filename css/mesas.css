@@ -1,0 +1,7 @@
+.collection .collection-item.avatar img.circle.fullsized {
+    object-fit: cover;
+    width:50px;
+    height: 50px;
+    left: 10px;
+}
+

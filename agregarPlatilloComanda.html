@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Zafiro ERP - Restaurant</title>
+     <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"  media="screen,projection"/>
+     <!--Import sweetAlert2.css-->
+      <link type="text/css" rel="stylesheet" href="lib/sweetAlert2/sweetalert2.min.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/agregarPlatilloComanda.html.css"  media="screen,projection"/>
+
+	 <!--Favicon-->
+     <link rel="icon" href="img/Restaurante.png">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+     <!--Mostrar en pantalla completa-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+     
+     <!--Muestra la barra de estado en iphone-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+     
+     <!--Color en la barra de direccion en chrome-->
+    <meta name="theme-color" content="#4a148c">
+     
+     <!--Color de la app-->
+    <meta name="msapplication-navbutton-color" content="#4a148c">
+     
+     <!--Pantalla de bienvenida-->
+    <link rel="apple-touch-startup-image" href="img/splash.png" />
+    
+    <!--Pantalla de bienvenida-->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+ <body>
+    <div class="navbar-fixed">
+        <nav class="purple darken-4">
+            <div class="nav-wrapper">
+                <ul class="left">
+                    <li><a href="javascript:history.back()"><i class="material-icons">close</i></a></li>
+                    <li><h6><b>Mesa 4</b> <br/>Agregar platillo</h6></li>
+                    
+                </ul>
+                <ul class="right">
+                    
+                </ul>
+            </div>
+        </nav>
+        
+        
+    </div>
+     
+     
+     
+     
+     
+    <div class="row">
+    <div class="col s12 m6 offset-m3 ">
+      <div class="card">
+        <div class="card-image">
+            <img id="imgCover" src="img/backgrounds/black.png" >
+              <div class="gradientback">
+
+             </div>
+            <span class="card-title"><b id="txtDescripcion"></b></span>
+            <a id="btnFavorito" class="btn-floating halfway-fab waves-effect waves-light btn-large"><i class="material-icons" id="iconFavorito">star_border</i></a>              
+          </div>
+        <div class="card-content">
+            <span>Platillos</span>
+        <ul class="pagination">
+        <li id="btnReducirCantidad" class="waves-effect"><a href="javascript:void(0)"><i class="material-icons">indeterminate_check_box</i></a></li>
+        <li id="lstItem1" class="lst waves-effect active"><a href="javascript:seleccionarPlatillo(1)">1</a></li>
+        <li id="lstItem2" class="lst waves-effect" style="display:none"><a href="javascript:seleccionarPlatillo(2)">2</a></li>
+        <li id="lstItem3" class="lst waves-effect" style="display:none"><a href="javascript:seleccionarPlatillo(3)">3</a></li>
+        <li id="lstItem4" class="lst waves-effect" style="display:none"><a href="javascript:seleccionarPlatillo(4)">4</a></li>
+        <li id="lstItem5" class="lst waves-effect" style="display:none"><a href="javascript:seleccionarPlatillo(5)">5</a></li>
+        <li id="lstItem6" class="lst waves-effect" style="display:none"><a href="javascript:seleccionarPlatillo(6)">6</a></li>
+        <li id="lstItem7" class="lst waves-effect" style="display:none"><a href="javascript:seleccionarPlatillo(7)">7</a></li>
+        <li id="lstItem8" class="lst waves-effect" style="display:none"><a href="javascript:seleccionarPlatillo(8)">8</a></li>
+        <li id="lstItem9" class="lst waves-effect" style="display:none"><a href="javascript:seleccionarPlatillo(9)">9</a></li>
+        <li id="btnAumentarCantidad" class="waves-effect"><a href="javascript:void(0)"><i class="material-icons">add_box</i></a></li>
+        
+      </ul>
+        <div id="pnlModificadores">
+            <!-- Aqui se agregan los modificadores -->
+        </div>
+              
+          </div>
+          <div class="card-action">
+              <p><b>Total: <span id="clcTotal">0.00</span></b></p>
+              
+              <div id="barLoading" class="progress" style="display:none">
+                  <div class="indeterminate"></div>
+              </div>
+              
+              <div class="row input-field col s10 offset-s1" style="margin-top: 0">
+                <a id="btnGuardar" class="waves-effect waves-light btn col s12">Agregar</a>
+            </div>
+              <br />
+              <br />
+              
+          </div>
+      </div>
+    </div>
+    </div>
+     
+   
+     
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="lib/sweetAlert2/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/Core.js"></script>
+    <script type="text/javascript" src="js/Utils.js"></script>
+    <script type="text/javascript" src="js/Restaurant.js"></script>
+    <script type="text/javascript" src="js/agregarPlatilloComanda.html.js"></script>
+    
+</body>
+</html>

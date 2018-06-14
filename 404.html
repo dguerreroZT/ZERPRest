@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Zafiro ERP - Restaurant</title>
+     <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"  media="screen,projection"/>
+     <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="lib/sweetAlert2/sweetalert2.min.css"  media="screen,projection"/>
+     <!--Import custom css-->
+      <link type="text/css" rel="stylesheet" href="css/404.html.css"  media="screen,projection"/>
+
+	 <!--Favicon-->
+     <link rel="icon" href="img/Restaurante.png">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+     <!--Mostrar en pantalla completa-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+     
+     <!--Muestra la barra de estado en iphone-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+     
+     <!--Color en la barra de direccion en chrome-->
+    <meta name="theme-color" content="#4a148c">
+     
+     <!--Color de la app-->
+    <meta name="msapplication-navbutton-color" content="#4a148c">
+     
+     <!--Pantalla de bienvenida-->
+    <link rel="apple-touch-startup-image" href="img/splash.png" />
+    
+    <!--Pantalla de bienvenida-->
+    <link rel="manifest" href="manifest.json">
+     
+</head>
+
+ <body bgcolor="#ede7f6">
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <ul class="left">
+                    
+                    <li><h5>Restaurant</h5></li>
+                    
+                </ul>
+                <ul class="right">
+                   
+                </ul>
+            </div>
+        </nav>
+        
+        
+    </div>
+     
+     
+     
+     <div class="row center" style="margin-top: 20px">
+         <img id="fotoCliente" src="img/not_connected.svg" class="center" onerror="this.src='img/person.png';" />
+         
+     </div>
+             
+     <div class="row center deep-purple-text text-lighten-1">
+         <h5><b>Lo sentimos</b></h5>
+     </div>
+     
+     <div class="row center deep-purple-text text-lighten-1">
+         <h6>Parece que no estás conectado al servidor</h6>
+     </div>
+    
+     <div class="row input-field col s10 offset-s1" style="margin-top: 0">
+            <p><a id="btnReintentar" class="waves-effect waves-light btn col s10 m6 l4 offset-s1 offset-m3 offset-l4">Volver a intentar</a></p>
+        </div>
+     
+     
+     <div class="fixed-action-btn">
+      <a id="btnContinuar" href="javascript:void(0)" class="btn-floating btn-large waves-effect waves-light" style="display: none"><i class="material-icons">arrow_forward</i></a>
+    </div>
+     
+     <!--
+    <div class="container z-depth-2" style="margin-top: 20px">
+    <div class="row">
+    <form class="col s12" autocomplete="off">
+      <div class="row" style="margin: 0">
+        <div class="input-field col s10 offset-s1">
+          <i class="material-icons prefix">person</i>
+          <input id="txtAsociado" type="text" class="autocomplete">
+          <label for="txtAsociado">Asociado</label>
+        </div>
+      </div>
+
+        <div class="row">
+            <div class="card small col s6">
+                <div class="card-image">
+                    <img src="ObtenerImagen?emp=1&tipo=CL&rid=5" onerror="this.src='img/person.png';"/>
+                    <span class="card-title"></span>
+                </div>
+                <div class="card-content">
+                  <p>JUANITO GARZA GARCIA</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">Seleccionar</a>
+                </div>
+            </div>
+            
+            <div class="card small col s6">
+                <div class="card-image">
+                    <img src="ObtenerImagen?emp=1&tipo=CL&rid=4" onerror="this.src='img/person.png';"/>
+                    <span class="card-title"></span>
+                </div>
+                <div class="card-content">
+                  <p>JUANITO GARZA GARCIA</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">Seleccionar</a>
+                </div>
+            </div>
+            
+            <div class="card small col s6">
+                <div class="card-image">
+                    <img src="ObtenerImagen?emp=1&tipo=CL&rid=5" onerror="this.src='img/person.png';"/>
+                    <span class="card-title"></span>
+                </div>
+                <div class="card-content">
+                  <p>JUANITO GARZA GARCIA</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">Seleccionar</a>
+                </div>
+            </div>
+            
+        </div>
+        
+      <div class="row" style="margin: 0">
+        <div class="input-field col s10 offset-s1">
+          <i class="material-icons prefix">people</i>
+          <input id="txtDependiente" type="text" class="autocomplete">
+          <label for="txtDependiente">Dependiente</label>
+        </div>
+      </div>
+        
+        
+      <div class="row" style="margin: 0">
+        <div class="input-field col s3 offset-s3">
+            <i class="material-icons prefix"><a id="btnReducirCantidad" href="#!" class="purple-text text-darken-2">indeterminate_check_box</a></i>
+          <input disabled value="1" id="txtCantidad" type="text" class="validate center-align black-text">
+          <label for="txtCantidad">Cantidad</label>
+          <i class="material-icons suffix"><a id="btnAumentarCantidad" href="#!" class="purple-text text-darken-2">add_box</a></i>
+        </div>
+      </div>
+        <div class="row input-field col s10 offset-s1" style="margin-top: 0">
+            <p><a id="btnGuardar" class="waves-effect waves-light btn col s12">Guardar</a></p>
+        </div>
+        
+    </form>
+  </div>
+     </div>
+            -->
+     
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="lib/sweetAlert2/sweetalert2.min.js"></script>
+     <!--script type="text/javascript" src="js/Core.js"></script-->
+    <!--script type="text/javascript" src="js/Utils.js"></script-->
+    <!--script type="text/javascript" src="js/Restaurant.js"></script-->
+    <!--script type="text/javascript" src="js/agregarMesaCliente.html.js"></script-->
+    
+</body>
+</html>

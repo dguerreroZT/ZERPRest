@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Zafiro ERP - Restaurant</title>
+     <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="lib/sweetAlert2/sweetalert2.min.css"  media="screen,projection"/>
+     <link type="text/css" rel="stylesheet" href="css/mesas.css"  media="screen,projection"/>
+
+	 <!--Favicon-->
+     <link rel="icon" href="img/Restaurante.png">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+     <!--Mostrar en pantalla completa-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+     
+     <!--Muestra la barra de estado en iphone-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+     
+     <!--Color en la barra de direccion en chrome-->
+    <meta name="theme-color" content="#4a148c">
+     
+     <!--Color de la app-->
+    <meta name="msapplication-navbutton-color" content="#4a148c">
+     
+     <!--Pantalla de bienvenida-->
+    <link rel="apple-touch-startup-image" href="img/splash.png" />
+    
+    <!--Pantalla de bienvenida-->
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+ <body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+                <!--<a href="#!" class="left">
+                    <<img src="img/Zafiro_horizontal_blanco.png" height="45 px" style="margin-top: 5px" />
+                </a>-->
+                <ul id="mnuOptions" class="dropdown-content">
+                  <li><a href="#!">Cambiar centro de consumo</a></li>
+                  <li class="divider"></li>
+                  <li><a id="btnCerrarSesion" href="#!">Cerrar Sesión</a></li>
+                </ul>
+                <ul class="left">
+                    <li class="brand-logo left">Mesas</li>
+                    
+                </ul>
+                <ul class="right">
+                    <!--<li><a href="sass.html"><i class="material-icons">search</i></a></li>-->
+                    <li><a id="btnOrdenar" href="javascript:void(0)"><i class="material-icons">sort</i></a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="mnuOptions"><i class="material-icons">more_vert</i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+        <ul id="main_list" class="collection">
+            <!-- Los elementos de la lista se cargan dinamicamente -->    
+        </ul>
+     
+     <div id="loadingBar" class="center">
+      <div class="preloader-wrapper active">
+        <div class="spinner-layer spinner-purple-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+     </div>
+     
+    <div class="fixed-action-btn">
+      <a href="agregarMesa.html" class="btn-floating btn-large waves-effect waves-light"><i class="material-icons">add</i></a>
+    </div>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+     <script type="text/javascript" src="lib/sweetAlert2/sweetalert2.min.js"></script>
+     <script type="text/javascript" src="js/Core.js"></script>
+     <script type="text/javascript" src="js/Utils.js"></script>
+    <script type="text/javascript" src="js/Restaurant.js"></script>
+     <script type="text/javascript" src="js/mesas.html.js"></script>
+    
+</body>
+</html>

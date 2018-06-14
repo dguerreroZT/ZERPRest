@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+ <head>
+     <title>Zafiro ERP - Restaurant</title>
+     <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="lib/materialize/css/materialize.css"  media="screen,projection"/>
+
+	 <!--Favicon-->
+     <link rel="icon" href="img/Restaurante.png">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     
+     <!--Mostrar en pantalla completa-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+     
+     <!--Muestra la barra de estado en iphone-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+     
+     <!--Color en la barra de direccion en chrome-->
+    <meta name="theme-color" content="#000">
+     
+     <!--Color de la app-->
+    <meta name="msapplication-navbutton-color" content="#000">
+     
+     <!--Pantalla de bienvenida-->
+    <link rel="apple-touch-startup-image" href="img/splash.png" />
+    
+    <!--Pantalla de bienvenida-->
+    <link rel="manifest" href="manifest.json">
+     
+     <style>
+         * {
+            padding: 0;
+            margin: 0;
+          }
+          .fit { /* set relative picture size */
+            max-width: 100%;
+            max-height: 100%;
+          }
+          .center {
+            display: block;
+            margin: auto;
+          }
+     </style>
+     
+</head>
+
+ <body bgcolor="#000">
+     <img id="imgSplash" src="img/splash.jpg" class="center fit"/>
+    
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="lib/materialize/js/materialize.min.js"></script>
+     <script type="text/javascript" src="js/Core.js"></script>
+    <script type="text/javascript" src="js/index.html.js"></script>
+    <!--script>
+        if('serviceWorker' in navigator) {
+          navigator.serviceWorker
+                   .register('/sw.js')
+                   .then(function() { console.log("Service Worker Registered"); });
+        }
+</script-->
+</body>
+</html>
