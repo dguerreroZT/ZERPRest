@@ -1,6 +1,6 @@
 Core = new function(){
     
-    var urlServer = "http://192.168.1.22:8000/"
+    var urlServer = "https://192.168.1.22:8000/"
     
     this.newId = function(len){
         function s4() {
